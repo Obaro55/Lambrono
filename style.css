@@ -1,0 +1,3478 @@
+/*
+Website: Lambrono Autos
+Theme URI: https://www.lambronoautos.com/
+Author: Obaro Egbane
+*/
+
+
+
+
+
+
+/*----- CSS Reset -----*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+}
+
+html {
+font-size: 100%;
+overflow-y: scroll;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+background-image: #ffffff;
+}
+
+/* resetting the basic content blocks */
+article, aside, details, figcaption, figure, footer, header, main,
+nav, section {
+display: block;
+}
+
+/* resetting the lists */
+ol, ul {
+list-style: none;
+}
+
+table {
+border-collapse: separate;
+border-spacing: 0;
+}
+
+caption, th, td {
+font-weight: normal;
+text-align: left;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+content: "";
+}
+
+blockquote, q {
+quotes: " ";
+}
+
+a:focus {
+outline: thin dotted;
+}
+
+a:hover, a:active {
+outline: 0;
+}
+
+a img {
+border: 0;
+}
+
+/*----- CSS Reset -----*/
+
+
+
+
+
+
+/*----- Clear Floats -----*/
+
+.clear:before, .clear:after{
+	content:"";
+	display:table;
+}
+
+.clear:after {
+	clear:both;	
+}
+
+.clear {
+	zoom:1;
+}
+
+/*----- Clear Floats -----*/
+
+
+
+
+
+
+/*----- Universal Style Rules -----*/
+
+body {
+	position:relative;
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:16px;
+	color:#2f2f2f;
+	background-color:#ffffff;
+}
+
+/*----- Universal Style Rules -----*/
+
+
+
+
+
+
+/*----- Header & Navigation -----*/
+
+header {
+	width:100%;
+	height:70px;
+	background-color:#ffffff;
+	border-bottom:1px solid #e1e1e1;
+}
+
+header.home-page {
+	border-bottom:0;
+}
+
+header nav {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	max-width:1366px;
+	margin:0 auto;
+	padding:0 75px;
+}
+
+header nav a {
+    text-decoration:none;
+}
+
+.menu-items {
+	display:flex;
+	margin-left:auto;
+}
+
+.menu-items .menu {
+	display:flex;
+}
+
+.menu-items .menu li a {
+	display:inline-block;
+	text-decoration:none;
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:16px;
+	font-weight:500;
+	color:#2f2f2f;
+	line-height:70px;
+	padding:0 32px;
+	outline:none;	
+}
+
+.menu-items .menu li.no-padding-right a {
+	padding-right:0 !important;
+}
+
+.menu-items .menu li.header-social-media {
+	display:none;
+}
+
+.logo {
+	width:195px;
+	height:70px;
+	padding-top:20px;
+}
+
+.logo a img {
+	width:100%;
+	height:auto;
+}
+
+.menu-toggle-container {
+	display:none;
+}
+
+/*----- Header & Navigation -----*/
+
+
+
+
+
+
+/*----- Home Page Intro -----*/
+
+.home-page-intro {
+	position:relative;
+	width:100%;
+	background-color:#ffffff;
+	background-image:url(images/home-page-intro.jpg);
+	background-size:cover;
+}
+
+.home-page-intro-container {
+	max-width:1366px;
+	margin:0 auto;
+	padding:175px 75px;
+}
+
+.home-page-intro-container h1 {
+	display:table;
+	font-family:"Montserrat", Arial, sans-serif;
+	font-size:26px;
+	font-weight:600;
+	color:#ffffff;
+	margin:0 auto 25px auto;
+}
+
+.search-container {
+	position:relative;
+	width:650px;
+	height:auto;
+	margin:0 auto;
+	overflow:auto;
+	box-shadow:0 3px 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 3px 3px rgba(0,0,0,0.1);
+}
+
+.search-container label {
+	display:inline-block;
+	text-indent:-9999em;
+}
+
+.search-container input {
+	font-size:18px;
+	width:100%;
+	height:60px;
+	padding-left:25px;
+	background-color:#ffffff;
+	border:0;
+	outline:0;
+	/* border-radius:5px; */
+}
+	
+.search-container #search-button {
+	position:absolute;
+	right:0;
+	width:60px;
+	height:60px;
+	background:url(images/lambrono-search-icon.svg) no-repeat 20px 20px;
+	cursor:pointer;
+	outline:0;	
+	background-color:#db03cc;
+	/* border-radius:0;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px; */
+}
+
+/*----- Home Page Intro -----*/
+
+
+
+
+
+
+/*----- Home Page Listings -----*/
+
+.homepage-listings {
+	width:100%;
+	background-color:#fce6fb;
+}
+
+.homepage-listings-container {
+	max-width:1366px;
+	margin:0 auto;
+	padding:75px 75px;
+}
+
+.items-container {
+	display:flex;
+	column-gap:2.878289473684211%;
+}
+
+.items-container .item {
+	width:22.84128289473684%;
+	height:355px;
+	background-color:#ffffff;
+	border-radius:10px;
+	box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.items-container .item a {
+	text-decoration:none;
+}
+
+.items-container .item .item-picture {
+	width:100%;
+	height:200px;
+	overflow:hidden;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.items-container .item img {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.items-container .item .item-text {
+	position:relative;
+	width:100%;
+	height:155px;
+	padding:15px 15px
+}
+
+.items-container .item .item-text .status-and-brand {
+	font-size:14.8px;
+	font-weight:600;
+	color:#2f2f2f;
+	color:#000000;
+	margin-bottom:7.5px;
+}
+
+.items-container .item .item-text p.status {
+	display:inline;
+}
+
+.items-container .item .item-text p.brand {
+	display:inline;
+}
+
+.items-container .item .item-text span.interpunct {
+	font-weight:900;
+	color:#000000;
+	color:#db03cc;
+}
+
+.items-container .item .item-text p.title {
+	font-size:16px;
+	color:#2f2f2f;
+	line-height:1.2;
+}
+
+.items-container .item .item-text p.price {
+	position:absolute;
+	left:15px;
+	bottom:15px;
+	font-size:14.6px;
+	font-weight:600;
+	color:#db03cc;
+	padding:5px 15px 5px 0;
+	border:1px solid #2f2f2f;
+	border-left:0;
+	border-bottom-right-radius:15px;
+}
+
+.homepage-listings-container p.see-more-cars {
+	display:inline-block;
+	font-size:18px;
+	margin-top:45px;
+}
+
+.homepage-listings-container p.see-more-cars a {
+	font-weight:500;
+	color:#db03cc;
+}
+
+.homepage-listings-container p.see-more-cars a img {
+	display:inline;
+	width:18px;
+	margin-left:5px;
+}
+
+/*----- Home Page Listings -----*/
+
+
+
+
+
+
+/*----- Brand Logos -----*/
+
+.brand-logos-container {
+	max-width:1366px;
+	margin:0 auto;
+	padding:75px 75px;
+	overflow:auto;
+}
+
+.brand-logos-container ul {
+	display:flex;
+	flex-wrap:wrap;
+	margin-bottom:35px;
+	border-left:1px solid #000000;
+	border-bottom:1px solid #000000;
+}
+
+.brand-logos-container ul li {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:25%;
+	height:185px;
+	border-top:1px solid #000000;
+	border-right:1px solid #000000;
+}
+
+.brand-logos-container ul li img {
+	width:75%;
+}
+
+.brand-logos-container ul li img.jeep {
+	width:50%;
+}
+
+.brand-logos-container ul li img.bmw {
+	width:40%;
+}
+
+.brand-logos-container p {
+	text-align:center;
+	font-size:32px;
+}
+
+/*----- Brand Logos -----*/
+
+
+
+
+
+
+/*----- Footer -----*/
+
+footer.footer {
+	width:100%;
+	height:auto;
+	background-color:#31012e;
+}
+
+.footer-container {
+	max-width:1366px;
+	margin:0 auto;
+	overflow:auto;
+}
+
+.footer-main {
+	width:100%;
+	margin:0 auto;
+	padding:60px 75px 20px 75px;
+	overflow:auto;
+}
+
+.footer-main ul {
+	display:flex;
+	height:250px;
+}
+
+.footer-main ul li {
+	display:inline-block;
+	width:25%;
+	height:250px;
+}
+
+.footer-main h5 {
+	font-size:18px;
+	font-weight:800;
+	color:#ffffff;
+}
+
+.footer-main li p a {
+	display:inline-block;
+	text-decoration:none;
+	color:#fee8fc;
+	margin-top:15px;
+}
+
+.footer-main ul li p a i {
+	font-size:18px;
+	color:#fee8fc;
+	margin-right:10px;
+}
+
+.footer-copyright {
+	width:100%;
+	background-color:#0f0b0f;
+	overflow:auto;
+}
+
+.footer-copyright-container {
+	max-width:1366px;
+	height:auto;
+	margin:0 auto;
+	padding:40px 75px 40px 75px;
+}
+
+.footer-copyright  p.copyright {
+	font-size:14px;
+	font-weight:500;
+	color:#db03cc;
+}
+
+/*----- Footer -----*/
+
+
+
+
+
+
+/*----- Template -----*/
+
+.template-page {
+	width:100%;
+	background-color:#ffffff;
+	overflow:auto;
+}
+
+.template-page-header {
+	width:100%;
+	background-color:#ffffff;
+}
+
+.template-page-header-container {
+	width:800px;
+	margin:0 auto;
+	padding:75px 0;
+	overflow:auto;
+}
+
+.template-page-header-container h1 {
+	text-transform:uppercase;
+	text-align:center;
+	font-family:"Montserrat", Arial, sans-serif;
+	font-size:46px;
+	font-weight:500;
+}
+
+span.header-design-line {
+	display:inline-block;
+	width:75px;
+	border-bottom:4px solid #de7f03;
+}
+
+.template-page-container {
+	max-width:1366px;
+	margin:0 auto;
+	padding:75px 75px 150px 75px;
+}
+
+.template-text-container {
+	width:800px;
+	margin:0 auto;
+	position:relative !important;
+}
+
+.template-text-container p {
+	font-size:20px;
+	line-height:1.5;
+}
+
+.template-text-container p.first-paragraph {
+	font-size:26px;
+	line-height:1.5;
+}
+
+.template-text-container p.paragraph-spacing {
+	margin-bottom:25px;
+}
+
+.template-text-container p.extra-spacing {
+	margin-bottom:35px;
+}
+
+.template-article {
+	width:100%;
+	padding:60px 0 65px 0;
+}
+
+.template-article-container {
+	width:800px;
+	margin:0 auto;
+}
+
+.template-article-container .top-spacing {
+	margin-top:30px;
+}
+
+.template-article-container .extra-spacing {
+	margin-bottom:35px !important;
+}
+
+.template-article-container h2 {
+	font-size:18px;
+	font-weight:800;
+	margin-bottom:5px;
+}
+
+.template-article-container p {
+	font-size:20px;
+	line-height:1.5;
+}
+
+.template-article-container p.paragraph-spacing {
+	margin-bottom:25px;
+}
+
+/*----- Template -----*/
+
+
+
+
+
+
+/*----- Available Cars -----*/
+
+.template-page-container.custom {
+	padding-top:5px;
+}
+
+.template-page-header-container.custom h1 {
+	font-size:36px;
+}
+
+.available-cars-container {
+	max-width:1366px;
+	margin:0 auto;
+	padding:10px 75px 125px 75px;
+	overflow:auto;
+	background-color:#ffffff;
+}
+
+.available-cars-container .items-container {
+	flex-wrap:wrap;
+	row-gap:50px;
+}
+
+/*----- Available Cars -----*/
+
+
+
+
+
+
+/*----- Listing Page -----*/
+
+.listing-header {
+	width:100%;
+	background-color:#ffffff;
+}
+
+.listing-header-container {
+	width:800px;
+	margin:0 auto;
+	padding:75px 0;
+	overflow:auto;
+}
+
+.header-metadata {
+	font-size:14.8px;
+	margin-bottom:20px;
+}
+
+.listing-header-container span.brand a {
+	color:#2f2f2f;
+}
+
+.listing-header-container h1 {
+	display:block;
+	font-size:30px;
+	font-weight:600;
+	margin-bottom:25px;
+}
+
+.listing-header-container span.design-line {
+	display:inline-block;
+	width:100%;
+	margin-bottom:20px;
+	border-bottom:1px solid #db03cc;
+}
+
+.listing-header-container p.price {
+	display:inline-block;
+	font-weight:500;
+	padding:15px 35px 15px 0;
+	border:1px solid #2f2f2f;
+	border-left:0;
+	border-bottom-right-radius:25px;
+}
+
+.listing-slider {
+	position:relative;
+	max-width:1050px;
+	margin:0 auto 45px auto;
+	background-color:#f2f2f2;
+}
+
+.listing-slider-container {
+	position:relative;
+	max-width:950px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.listing-slider-container .swiper-container {
+	position:relative;
+	height:500px;
+}
+
+.listing-slider-container .swiper-container img {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+.swiper-button-prev:after {
+	font-size:24px !important;
+	font-weight:bold !important;
+	color:#db03cc;
+}
+
+.swiper-button-next:after {
+	font-size:24px !important;
+	font-weight:bold !important;
+	color:#db03cc;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity:1 !important;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom:20px !important;
+}
+
+.swiper-pagination-bullet {
+	background-color:#ffffff !important;
+	opacity:1 !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color:#db03cc !important;
+}
+
+.car-details {
+	width:100%;
+	background-color:#ffffff;
+}
+
+.car-details-container {
+	width:800px;
+	margin:0 auto;
+	padding:25px 0 35px 0;
+	overflow:auto;
+}
+
+.car-details-container h2 {
+	text-transform:uppercase;
+	font-size:20px;
+	font-weight:600;
+	margin-bottom:25px;
+}
+
+.auto-details {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding-top:35px;
+	border-top:2px solid #db03cc;
+	overflow:auto;
+}
+
+.car-attribute {
+	width:47.5%;
+	margin-bottom:25px;
+	padding-bottom:15px;
+	border-bottom:1px solid #2f2f2f;
+}
+
+.car-attribute:last-child {
+	border-bottom:0;
+}
+
+.car-attribute h3 {
+	font-weight:600;
+	margin-bottom:15px;
+}
+
+.more-cars {
+	background-color:#fce6fb;
+}
+
+.more-cars-container {
+	width:800px;
+	margin:0 auto;
+	padding:45px 0;
+	overflow:auto;
+}
+
+.more-cars-container h3 {
+	font-size:22px;
+	margin-bottom:35px;
+}
+
+.more-cars-container .items-container {
+	column-gap:4.375%;
+}
+
+.more-cars-container .items-container .item {
+	width:30.41666666666667%;
+	height:355px;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+
+/*----- About Us -----*/
+
+.template-page-header.about-us {
+	background-image:url(images/about-us.jpg);
+	background-size:cover;
+}
+
+.template-page-header-container.about-us {
+	padding:100px 0;
+}
+
+.template-page-header-container.about-us h1 {
+	font-size:32px;
+	font-weight:600;
+	color:#ffffff;
+	margin-bottom:20px;
+}
+
+.template-page-header-container.about-us p {
+	text-align:center;
+	font-size:18px;
+	color:#ffffff;
+}
+
+.template-page-container.about-us {
+	padding-bottom:175px;
+}
+
+.template-text-container.about-us p.contact {
+	font-size:18px;
+	margin-bottom:45px;
+}
+
+.template-text-container.about-us p.browse-cars a {
+	display:block;
+	font-size:18px;
+	color:#db03cc;
+	padding:17.5px 20px;
+	border:1px solid #2f2f2f;
+	border-radius:5px;
+}
+
+/*----- About Us -----*/
+
+
+
+
+
+
+/*----- Search Page -----*/
+
+.search-page-header-container {
+	padding:95px 75px 45px 75px;
+}
+
+.search-page-header-container h1 {
+	font-size:32px;
+	font-weight:400;
+	margin-bottom:15px;
+}
+
+.search-page-header-container p {
+	font-size:18px;
+	font-weight:500;
+}
+
+.search-text-container {
+	padding:25px 75px 175px 75px;
+}
+
+.search-text-container p {
+	display:inline-block;
+	font-size:20px;
+	line-height:1.4;
+	width:50%;
+	height:auto;
+	padding:12px 16px;
+	background-color:#fce6fb;
+	border-left:4px solid #db03cc;
+}
+
+/*----- Search Page -----*/
+
+
+
+
+
+
+/*----- Protected Pages -----*/
+
+.template-page-header.protected-page {
+	background-image:url(images/header-picture.jpg);
+	background-size:cover;
+}
+
+.template-page-header-container.protected-page h1 {
+	font-size:36px;
+	font-weight:600;
+	color:#ffffff;
+}
+
+/*----- Protected Pages -----*/
+
+
+
+
+
+
+/*----- Custom Admin Page -----*/
+
+.admin-return-link {
+	margin-bottom:45px;
+	padding:17.5px 20px;
+	border:1px solid #2f2f2f;
+	border-radius:5px;
+}
+
+.admin-return-link a {
+	text-decoration:none;
+	color:#000000;
+	color:#db03cc;
+}
+
+.admin-area {
+	width:500px;
+}
+
+.top-area {
+	width:100%;
+	height:75px;
+	padding:25px 25px;
+	border:1px solid #2f2f2f;
+}
+
+.bottom-area {
+	width:100%;
+	height:200px;
+	padding:25px 25px;
+	border:1px solid #2f2f2f;
+	border-top:0;
+}
+
+.admin-area h1 {
+	display:block;
+	text-align:left;
+	font-size:24px;
+	font-weight:500;
+}
+
+.admin-links a {
+	display:inline-block;
+	text-decoration:none;
+	margin-bottom:15px;
+	color:#2f2f2f;
+}
+
+.admin-links li i {
+	color:#db03cc;
+	margin-right:10px;
+}
+
+/*----- Custom Admin Page -----*/
+
+
+
+
+
+
+/*----- Confirmation Page -----*/
+
+.template-page-container.confirmation-page {
+	padding:95px 75px 300px 75px;
+}
+
+.page-contents.confirmation-page {
+	width:840px;
+	padding:50px 25px 50px 25px;
+	border:1px solid #d1d1d1;
+	border-left:8px solid #db03cc;
+}
+
+.page-contents.confirmation-page h1 {
+	text-transform:uppercase !important;
+	text-transform:none;
+	font-size:18px;
+    font-weight:800;
+    line-height:1.2;
+	margin-bottom:15px;
+}
+
+.page-contents.confirmation-page p {
+	margin-bottom:5px;
+}
+
+span.confirmation-page-design-line {
+	display:inline-block;
+	width:50px;
+	margin-top:15px;
+	border-bottom:3px solid #2f2f2f;
+}
+
+/*----- Confirmation Page -----*/
+
+
+
+
+
+
+/*----- 404 -----*/
+
+.template-page-container.error-404 {
+	font-style:italic;
+	padding-top:50px;
+	padding-bottom:180px;
+}
+
+.template-text-container.error-404 h1 {
+	text-align:center;
+	font-size:300px;
+	font-weight:500;
+	color:#db03cc;
+	margin-bottom:15px;
+}
+
+.template-text-container.error-404 p {
+	text-align:center;
+	font-size:46px;
+}
+
+.template-text-container.error-404 p a {
+	text-decoration:none;
+	font-weight:500;
+	color:#db03cc;
+}
+
+/*----- 404 -----*/
+
+
+
+
+
+
+/*----- Page -----*/
+
+ul.custom-ul-list {
+	list-style:square outside none;
+	font-size:16px;
+	padding-left:18px;
+	color:#2f2f2f;
+	width:100%;
+}
+
+ul.custom-ul-list li p {
+	font-size:16px;
+	color:#2f2f2f;
+	line-height:1.6;
+}
+
+ul.ul-spacing {
+	margin-bottom:20px;
+}
+
+/*----- Page -----*/
+
+
+
+
+
+
+/*----- Form Template -----*/
+
+.form-container {
+	width:auto;
+	height:auto;
+}
+
+.form-container .form-spacing {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-bottom:25px;
+}
+
+.form-container .field-left {
+	position:relative;
+	width:48%;
+	height:auto;
+}
+
+.form-container .field-right {
+	position:relative;
+	width:48%;
+	height:auto;
+}
+
+.field-full-width {
+	width:100%;
+	height:auto;
+	margin-bottom:25px;
+}
+
+.field-full-width label {
+	display:inline-block;
+	font-size:14.8px;
+	font-weight:700;
+	margin-bottom:7.5px;
+}
+
+.field-right label {
+	display:inline-block;
+	font-size:14.8px;
+	font-weight:700;
+	margin-bottom:7.5px;
+}
+
+.field-left label {
+	display:inline-block;
+	font-size:14.8px;
+	font-weight:700;
+	margin-bottom:7.5px;
+}
+
+span.required {
+	font-weight:normal;
+	color:#2f2f2f;
+}
+
+.field-full-width input {
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:16px;
+	color:#2f2f2f;
+	width:100%;
+	height:50px;
+	padding-left:10px;
+	border:1px solid #d1d1d1;
+	border-bottom:1px solid #2f2f2f;
+	outline:0;
+}
+
+.field-full-width select {
+	display:block;
+	width:100%;
+	border-bottom:1px solid #2f2f2f;
+}
+
+.field-left select, .field-right select {
+	display:block;
+	width:100%;
+	border-bottom:1px solid #2f2f2f;
+}
+
+.field-right input {
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:16px;
+	color:#2f2f2f;
+	width:100%;
+	height:50px;
+	padding-left:10px;
+	border:1px solid #d1d1d1;
+	border-bottom:1px solid #404040;
+	outline:0;
+}
+
+.field-left input {
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:16px;
+	color:#2f2f2f;
+	width:100%;
+	height:50px;
+	padding-left:10px;
+	border:1px solid #d1d1d1;
+	border-bottom:1px solid #404040;
+	outline:0;
+}
+
+.form-container form textarea {
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:16px;
+	color:#2f2f2f;
+	width:100%;
+	height:100px;
+	padding:10px 10px;	
+	border:1px solid #d1d1d1;
+	border-bottom:1px solid #404040;
+	outline:0;
+}
+
+input#rememberme {
+	border-radius:2.5px !important;
+}
+
+.submit-form {
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:18px;
+	font-weight:700;
+	text-transform:uppercase;
+	color:#ffffff;
+	padding:16px 16px;
+	background-color:#db03cc;
+	border:0;
+	cursor:pointer;
+	outline:0;
+}
+
+/*----- Form Template -----*/
+
+
+
+
+
+
+/*----- Form Errors -----*/
+
+#submit-listing . custom-form-error {
+	display:inline-block;
+	font-size:14px;
+	font-weight:600;
+	width:100%;
+	height:auto;
+	margin:10px 0 10px 0;
+	padding:12px;
+	background-color:#fee7fc;
+	border-left:4px solid #db03cc;
+}
+
+.form-field .error .margin-top {
+	font-size:14px;
+	font-weight:800;
+	color:#db03cc;
+	margin:10px 0 10px 0;
+	display:inline-block;
+}
+
+/*----- Form Errors -----*/
+
+
+
+
+
+
+/*----- Custom Select -----*/
+
+.choices {
+  margin-bottom:0 !important;
+}
+
+.choices__inner {
+	color:#2f2f2f;
+    height:50px;
+	padding:10px 10px;	
+    background-color:#ffffff !important;
+	border:1px solid #d1d1d1;
+	border-bottom:1px solid #404040 !important;
+	border-radius:0 !important;
+	margin-bottom:0 !important;
+}
+
+.choices__placeholder {
+    opacity:1 !important;
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  border-radius:0 !important;
+}
+
+/*----- Custom Select -----*/
+
+
+
+
+
+
+/*----- Picture Upload -----*/
+
+.first-file-input {
+	padding-top:25px;
+}
+
+.field-full-width-file {
+	width:100%;
+	height:auto;	
+}
+
+.first-file-input h2 {
+	display:inline-block;
+	font-size:14.8px;
+	font-weight:500;
+	margin-bottom:7.5px;
+}
+
+div.upload {
+	display:inline-block;
+	position:relative;
+	width:100%;
+	height:50px;
+	margin-top:10px;
+    background-color:#ffffff;
+	border:1px solid #d1d1d1;
+	cursor:pointer;
+	overflow:hidden !important;
+}
+
+div.upload input[type="file"] {
+    display:input-block !important;
+	position:absolute;
+    left:0;
+    width:100%;
+    height:50px;
+    opacity:0;
+    cursor:pointer;
+}
+
+.uploadButton {
+	display:inline-block;
+	text-transform:uppercase;
+	font-size:12.6px;
+	line-height:50px;
+    margin-right:10px;
+    width:auto;
+	height:50px;
+	padding-left:10px;
+	padding-right:10px;
+	border:0;
+	border-right:1px solid #d1d1d1;
+	cursor:pointer;
+    box-sizing:content-box;
+}
+
+.fileName {
+    font-size:14px;
+	color:#2f2f2f;
+	overflow:hidden;
+}
+
+.add-more-button {
+	font-weight:600;
+	color:#db03cc;
+	margin:20px 0 35px 0;
+	padding:0;
+	background-color:transparent;
+	border:0;
+	cursor:pointer;
+}
+
+/*----- Picture Upload -----*/
+
+
+
+
+
+
+/*----- Login -----*/
+
+.template-page.login {
+	background-image:url(images/login.jpg);
+	background-size:cover;
+}
+
+.template-page-container.login {
+	padding-top:100px;
+}
+
+.form-container.login {
+	width:400px;
+	padding:35px 35px;
+	background-color:#ffffff;
+	overflow:auto;
+}
+
+.form-container.login h1 {
+	font-size:24px;
+	font-weight:700;
+	color:#2f2f2f;
+	margin-bottom:35px;
+}
+
+.form-container.login input[type="checkbox"] {
+	display:none; 
+}
+
+.form-container.login input[type="checkbox"] + label:before {
+   content:'';
+  -webkit-appearance:none;
+  background-color:transparent;
+  border:1px solid #d1d1d1;
+  padding:6.5px;
+  display:inline-block;
+  position:relative;
+  vertical-align:middle;
+  cursor:pointer;
+  margin-top:-3px;
+  margin-right:10px;
+}
+
+.lower-login-details {
+	display:flex;
+}
+
+.form-container.login input[type="checkbox"]:checked + label:before {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23db03cc' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+.form-container.login .rememberme {
+	display:inline-block;
+	margin-top:20px;
+}
+
+.form-button.login {
+	margin-left:auto;
+}
+
+.form-button.login .submit-form {
+	background-color:#db03cc;
+}
+
+/*----- Login -----*/
+
+
+
+
+
+
+/*----- Login Errors -----*/
+
+.krisokservicesltd-login-errors {
+	display:inline-block;
+	width:450px;
+	margin-bottom:20px;
+}
+
+.krisokservicesltd-login-errors .custom-form-error {
+	display:inline-block;
+	font-size:14px;
+	font-weight:600;
+	width:100%;
+	padding:15px 15px;
+	background-color:#ffffff;
+	border:1px solid #d1d1d1;
+	border-left:7.5px solid #db03cc;
+}
+
+/*----- Login Errors -----*/
+
+
+
+
+
+
+/*----- My Listings -----*/
+
+.my-listings {
+	width:100%;
+	height:auto;
+	margin-top:15px;
+	margin-bottom:25px;
+	overflow:auto;
+}
+
+.my-listings-container {
+	display:flex;
+	height:45px;
+	background-color:#ffffff;
+	border-left:1px solid #d1d1d1;
+	border-right:1px solid #d1d1d1;
+	border-bottom:1px solid #d1d1d1;
+	overflow:hidden;
+}
+
+.my-listings-container:first-child {
+	border-top:1px solid #d1d1d1;
+	/* border-top-left-radius:5px;
+	border-top-right-radius:5px; */
+}
+
+.my-listings-container:last-child {
+	border-bottom:3px solid #db03cc;
+}
+
+
+
+
+/*
+
+.my-listings-container:last-child {
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+*/
+
+.my-listing-title {
+	display:inline-block;
+	line-height:45px;
+	width:75%;
+	height:45px;
+	margin:0 auto;
+	padding-left:10px;
+	padding-right:15px;
+	border-right:1px solid #d1d1d1;
+	overflow:hidden;
+}
+
+.my-listing-title a {
+	text-decoration:none;
+	font-weight:500;
+	color:#2f2f2f;
+	vertical-align:center !important;
+}
+
+.my-listing-title a:hover {
+	color:#db03cc;
+}
+
+.my-listing-edit-delete {
+	display:inline-block;
+	text-align:center;
+	height:100px;
+	width:25%;
+	height:45px;
+	padding-top:9.5px;	
+}
+
+.my-listing-edit-delete span.edit a {
+	display:inline-block;
+	text-decoration:none;
+	text-align:center;
+	font-size:13.2px;
+	color:#2f2f2f;
+	width:65px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border:1px solid #d1d1d1;
+	border-radius:15px;
+	outline:0;
+	cursor:pointer;
+}
+
+.my-listing-edit-delete span.delete a {
+	display:inline-block;
+	text-decoration:none;
+	text-align:center;
+	font-size:13.2px;
+	color:#2f2f2f;
+	width:65px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border:1px solid #d1d1d1;
+	border-radius:15px;
+	outline:0;
+	cursor:pointer;
+}
+
+.no-listings-yet {
+	display:inline-block;
+	font-size:14px;
+	font-weight:600;
+	width:100%;
+	height:auto;
+	margin:20px 0 10px 0;
+	padding:12px;
+	background-color:#fce6fb;
+	border-left:4px solid #db03cc;
+}
+
+/*----- My Listings -----*/
+
+
+
+
+
+
+/*----- List Navigation -----*/
+
+.template-page .page-navigation {
+	margin-top:35px;
+	overflow:auto;
+}
+
+.template-page .page-navigation.custom {
+	display:table;
+	margin:55px auto 0 auto;
+}
+
+.template-page .page-numbers {
+	display:inline-block;
+	text-decoration:none;
+	text-align:center;
+	font-weight:800;
+	color:#2f2f2f;
+	width:37px;
+	height:35px;
+	line-height:35px;
+	margin-right:5px;
+	background-color:#fee7fc;
+	outline:0;
+	transition:.3s ease all;
+	outline:0 !important;
+}
+
+.template-page .page-numbers:hover {
+	text-decoration:none;
+	color:#ffffff;
+	background-color:#db03cc;
+}
+
+.template-page span.page-numbers.current {
+	color:#2f2f2f;
+	width:37px;
+	height:35px;
+	line-height:35px;
+	background-color:#db03cc;
+}
+
+.template-page .page-numbers:last-child {
+	margin-right:0;
+}
+
+.template-page .fa.fa-caret-left, .template-page  .fa.fa-caret-right {
+	font-weight:800;
+}
+
+/*----- List Navigation -----*/
+
+
+
+
+
+
+/*----- Privacy Policy -----*/
+
+.template-page-header-container.privacy-policy {
+	padding:75px 0 25px 0;
+}
+
+.template-page-header-container.privacy-policy h1 {
+	text-align:center;
+	font-size:34px;
+}
+
+.template-page-container.privacy-policy {
+	padding-top:20px;
+}
+
+.template-text-container.privacy-policy {
+	width:62%;
+	margin:0 auto;
+}
+
+.template-text-container.privacy-policy h2 {
+	font-size:20px;
+	font-weight:600;
+	color:#2f2f2f;
+	margin-bottom:10px;
+}
+
+.template-text-container.privacy-policy h2.more-spacing {
+	margin-bottom:20px;
+}
+
+.template-text-container.privacy-policy p {
+	line-height:1.5;
+}
+
+.template-text-container.privacy-policy ul.custom-ul-list {
+	list-style:none;
+	padding-left:0;
+	padding:25px 20px;
+	border:1px solid #2f2f2f;
+	border-radius:7.5px;
+}
+
+.template-text-container.privacy-policy table {
+	width:100%;
+	margin-bottom:35px;
+	border:1px solid #000000;
+}
+
+.template-text-container.privacy-policy table td {
+	padding:20px 25px;
+	border-bottom:1px solid #2f2f2f;
+}
+
+.template-text-container.privacy-policy table tr:last-child td {
+	border-bottom:0;
+}
+
+.template-text-container.privacy-policy table td i {
+	font-weight:800;
+	margin-right:5px;
+}
+
+/*----- Privacy Policy -----*/
+
+
+
+
+
+
+/*----- Contact Us -----*/
+
+.template-page-header.contact-us {
+	background-image:url(images/header-picture.jpg);
+	background-size:cover;
+}
+
+.template-page-header-container.contact-us h1 {
+	color:#ffffff;
+}
+
+.contact-form-container {
+	display:flex;
+}
+
+.form-intro-container {
+	width:50%;
+	padding-top:85px;
+	padding-right:45px;
+}
+
+.contact-form-container .form-container {
+	width:50%;
+}
+
+.form-intro-container h2 {
+	font-size:24px;
+	font-weight:600;
+	margin-bottom:10px;
+}
+
+.form-intro-container p.address {
+	font-size:22px;
+	margin-bottom:15px;
+}
+
+.form-intro-container p.phone-number, .form-intro-container p.email {
+	font-size:18px;
+}
+
+.form-intro-container p.phone-number {
+	margin-bottom:3.5px;
+}
+
+span.phone-number, span.email {
+	font-weight:500;
+}
+
+span.form-design-line {
+	display:inline-block;
+	width:75px;
+	margin-top:50px;
+	border-bottom:3px solid #db03cc;
+}
+
+/*----- Contact Us -----*/
+
+
+
+
+
+
+@media (max-width:1275px) {
+	
+/*----- Header & Navigation -----*/
+
+header nav {
+	padding:0 45px;
+}
+
+/*----- Header & Navigation -----*/
+
+
+
+
+
+
+/*----- Home Page Intro -----*/
+
+.home-page-intro-container {
+	padding:175px 45px;
+}
+
+/*----- Home Page Intro -----*/
+
+
+
+
+
+
+/*----- Home Page Listings -----*/
+
+.homepage-listings-container {
+	padding:65px 45px;
+}
+
+/*----- Home Page Listings -----*/
+
+
+
+
+
+
+/*----- Brand Logos -----*/
+
+.brand-logos-container {
+	padding:65px 45px;
+}
+
+/*----- Brand Logos -----*/
+
+
+
+
+
+
+/*----- Template -----*/
+
+.template-page-container {
+	padding:95px 45px 150px 45px;
+}
+
+.template-article-container {
+	padding:35px 45px 45px 45px;
+}
+
+/*----- Template -----*/
+
+
+
+
+
+
+/*----- About Us -----*/
+
+.template-page-container.about-us {
+	padding:50px 45px 115px 45px;
+}
+
+/*----- About Us -----*/
+
+
+
+
+
+
+/*----- Available Cars -----*/
+
+.available-cars-container {
+	padding:5px 45px 125px 45px;
+}
+
+/*----- Available Cars -----*/
+
+
+
+
+
+
+/*----- Search Page -----*/
+
+.search-page-header-container {
+	padding:95px 45px 25px 45px;
+}
+
+.search-text-container {
+	padding:25px 45px 175px 45px;
+}
+
+/*----- Search Page -----*/
+
+
+
+
+
+
+/*----- Confirmation Page -----*/
+
+.template-page-container.confirmation-page {
+	padding:95px 45px 300px 45px;
+}
+
+/*----- Confirmation Page -----*/
+
+
+
+
+
+
+/*----- Footer -----*/
+
+.footer-main {
+	padding:60px 45px 20px 45px;
+}
+
+.footer-copyright-container {
+	padding:40px 45px 40px 45px;
+}
+
+/*----- Footer -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:1115px) {
+
+/*----- Home Page Listings -----*/
+
+.items-container {
+	display:block;
+	white-space:nowrap;
+	width:100%;
+	height:425px;
+	padding-top:30px;
+	overflow-x:auto;
+}
+
+.items-container .item {
+	display:inline-block;
+	width:277.75px;
+	margin-right:35px;
+	vertical-align:middle;
+}
+
+.items-container .item:last-child {
+	margin-right:0;
+}
+
+.items-container .item .item-text p {
+	white-space:normal;
+}
+
+.homepage-listings-container p.see-more-cars {
+	margin-top:35px;
+}
+
+/*----- Home Page Listings -----*/
+
+
+
+
+
+
+/*----- Listing Page -----*/
+
+.more-cars-container {
+	padding:45px 0 10px 0;
+	overflow:auto;
+}
+
+.more-cars-container h3 {
+	margin-bottom:5px;
+}
+
+.more-cars-container .items-container {
+	display:block;
+}
+
+.more-cars-container .items-container .item {
+	width:277.75px;
+	margin-right:35px;
+}
+
+.more-cars-container .items-container .item:last-child {
+	margin-right:0;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+
+/*----- Available Cars -----*/
+
+.template-page-header-container.custom {
+	padding-bottom:35px;
+}
+
+.template-page-header-container.custom h1 {
+	font-size:36px;
+}
+
+.available-cars-container .items-container {
+	display:flex;
+	column-gap:0;
+	white-space:normal;
+	height:auto;
+	padding-top:auto;
+	overflow-x:visible;
+}
+
+.available-cars-container .items-container .item {
+	width:31.38726716708368%;
+	margin-right:2.919099249374479%;
+}
+
+.available-cars-container .items-container .item:nth-of-type(3n) {
+	margin-right:0;
+}
+
+/*----- Available Cars -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:1050px) {
+
+/*----- Listing Page -----*/
+
+.listing-slider {
+	max-width:none;
+	width:100%;
+}
+
+.listing-slider-container {
+	max-width:none;
+	width:100%;
+}
+
+.listing-slider-container .swiper-container {
+	height:450px;
+}
+
+.more-cars-container {
+	width:100%;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+
+/*----- Search Page -----*/
+
+.search-text-container p {
+	width:70%;
+}
+
+/*----- Search Page -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:1000px) {
+	
+/*----- Contact Us -----*/
+
+.form-intro-container {
+	padding-top:65px;
+}
+
+.form-intro-container h2 {
+	font-size:22px;
+}
+
+.form-intro-container p.address {
+	font-size:20px;
+}
+
+.form-intro-container p.phone-number, .form-intro-container p.email {
+	font-size:16px;
+}
+
+span.form-design-line {
+	margin-top:35px;
+}
+
+/*----- Contact Us -----*/
+	
+}
+
+
+
+
+
+
+@media (max-width:950px) {
+	
+/*----- Listing Page -----*/
+
+.listing-header-container {
+	width:100%;
+	padding:75px 45px;
+}
+
+.car-details-container {
+	width:100%;
+	padding:25px 45px 35px 45px;
+}
+
+.more-cars-container {
+	width:100%;
+	padding:45px 45px;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+
+/*----- Confirmation Page -----*/
+
+.page-contents.confirmation-page {
+	width:auto;	
+}
+
+/*----- Confirmation Page -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:900px) {
+	
+html.no-scrolling {
+	overflow:hidden;
+}
+
+
+
+	
+/*----- Header & Navigation -----*/
+
+.menu-toggle-container {
+	margin-left:auto;
+	display:flex; 
+	justify-content:center;
+	align-items:center;
+	width:auto;
+	height:70px;
+}
+
+.menu-icon {
+	cursor:pointer;
+}
+
+.menu-icon .bar {
+	display:block;
+	width:20px;
+	height:2px;
+	margin-bottom:4px;
+	background-color:#db03cc;
+	transition:all .3s ease-in-out;
+}
+
+.menu-icon .bar:last-child {
+	margin-top:0;
+}
+
+.menu-icon .bar.one.close {
+	float:right;
+	transform:translateX(0px) translateY(0px) rotate(45deg);
+}
+
+.menu-icon .bar.two.close {
+	transform: scale(0);
+}
+
+.menu-icon .bar.three.close {
+	float:right;
+	transform:translateX(0px) translateY(-6px) rotate(-45deg);
+}
+
+.menu-items {
+	display:block;
+	position:fixed;
+	top:69px;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	max-height:0;
+	height:auto;
+	padding:0;
+	background-color:#ffffff;
+	opacity:0;
+	visibility:hidden;
+	z-index:-1;
+	transition:0.2s ease-in-out;
+	overflow:scroll;
+}
+
+.menu-items.show {
+	max-height:1000px;
+	opacity:1;
+	visibility:visible;
+	z-index:500;
+}
+
+.menu-items .menu {
+	display:block;
+}
+
+.menu-items .menu li a {
+    display:block;
+	color:#ffffff;
+	line-height:unset;
+	width:100%;
+	padding:20px 45px;
+	background-color:#db03cc;
+	-webkit-tap-highlight-color:transparent !important;
+	border-bottom:1px solid #f748eb;
+}
+
+.menu-items .menu li.header-social-media {
+	display:flex;
+	padding:25px 45px;
+	background-color:#ffffff;
+}
+
+.menu-items .menu li.header-social-media a {
+	display:inline-block;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:600;
+	color:#db03cc;
+	width:auto;
+	margin-right:20px;
+	padding:0;
+	background-color:transparent;
+	border-bottom:0;
+}
+
+/*----- Header & Navigation -----*/
+
+
+
+
+
+	
+/*----- Home Page Intro -----*/
+
+.home-page-intro-container {
+	padding:150px 45px;
+}
+
+/*----- Home Page Intro -----*/
+	
+
+
+
+
+
+/*----- Template -----*/
+
+.template-page-header-container {
+	width:auto;
+	padding:75px 45px;
+}
+
+.template-text-container {
+	width:auto;
+}
+
+.template-article-container {
+	width:auto;
+}
+
+/*----- Template -----*/
+
+
+
+
+
+
+/*----- About Us -----*/
+
+.template-page-header-container.about-us {
+	padding:100px 45px;
+}
+
+/*----- About Us -----*/
+
+
+
+
+
+
+/*----- Privacy Policy -----*/
+
+.template-text-container.privacy-policy {
+	width:100%;
+}
+
+/*----- Privacy Policy -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:850px) {
+
+/*----- Available Cars -----*/
+	
+.available-cars-container .items-container .item {
+	height:375px
+}
+
+.available-cars-container .items-container .item .item-text {
+	height:175px;
+}
+
+/*----- Available Cars -----*/
+	
+	
+	
+
+
+	
+/*----- Search Page -----*/
+
+.search-text-container p {
+	width:90%;
+}
+
+/*----- Search Page -----*/
+	
+	
+
+
+
+	
+/*----- Footer -----*/
+
+.footer-main ul li {
+	width:50%;
+	height:200px;
+	margin-bottom:25px;
+}
+
+/*----- Footer -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+		
+/*----- Header & Navigation -----*/
+
+header nav {
+	padding:0 35px;
+}
+
+.menu-items .menu li a {
+	padding:20px 35px
+}
+
+.menu-items .menu li.header-social-media {
+	padding:25px 35px;
+}
+
+/*----- Header & Navigation -----*/
+
+
+
+
+
+
+/*----- Home Page Intro -----*/
+
+.home-page-intro-container {
+	padding:125px 35px;
+}
+
+.search-container {
+	width:90%;
+}
+
+/*----- Home Page Intro -----*/
+
+
+	
+	
+
+	
+/*----- Home Page Listings -----*/
+
+.homepage-listings-container {
+	padding:65px 35px;
+}
+
+/*----- Home Page Listings -----*/
+	
+
+
+
+
+	
+/*----- Brand Logos -----*/
+
+.brand-logos-container {
+	padding:65px 35px;
+}
+
+.brand-logos-container ul li {
+	height:140px;
+}
+
+/*----- Brand Logos -----*/
+
+
+
+
+
+
+/*----- Template -----*/
+
+.template-page-header-container h1 {
+	font-size:40px;
+}
+
+.template-page-header-container {
+	padding:75px 35px;
+}
+
+.template-page-container {
+	padding:95px 35px 125px 35px;
+}
+
+.template-article {
+	padding:50px 0 5px 0;
+}
+
+.template-article-container {
+	padding:25px 35px 35px 35px;
+}
+
+/*----- Template -----*/
+
+
+
+
+
+
+/*----- About Us -----*/
+
+.template-page-container.about-us {
+	padding:50px 35px 115px 35px;
+}
+
+.template-page-header-container.about-us h1 {
+	font-size:28px;
+}
+
+.template-page-header-container.about-us {
+	padding:85px 35px;
+}
+
+/*----- About Us -----*/
+
+
+
+
+
+
+/*----- Available Cars -----*/
+
+.template-page-header-container.custom {
+	padding-bottom:25px;
+}
+
+.template-page-header-container.custom h1 {
+	font-size:28px;
+}
+
+.available-cars-container {
+	padding:5px 35px 105px 35px;
+}
+
+/*----- Available Cars -----*/
+
+
+
+
+
+
+/*----- 404 -----*/
+
+.template-text-container.error-404 p {
+	font-size:36px;
+}
+
+/*----- 404 -----*/
+
+
+
+
+
+
+/*----- Listing Page -----*/
+
+.listing-header-container {
+	padding:75px 35px 45px 35px;
+}
+
+.listing-slider-container .swiper-container {
+	height:350px;
+}
+
+.car-details-container {
+	padding:25px 35px 35px 35px;
+}
+
+.more-cars-container {
+	padding:45px 35px;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+
+/*----- Search Page -----*/
+
+.search-page-header-container {
+	padding:75px 35px 25px 35px;
+}
+
+.search-text-container {
+	padding:25px 35px 175px 35px;
+}
+
+.search-text-container p {
+	font-size:18px;
+	width:auto;
+}
+
+/*----- Search Page -----*/
+
+
+
+
+
+
+/*----- Contact Us -----*/
+
+.template-page-container.contact-us {
+	padding-top:75px;
+}
+
+.contact-form-container {
+	flex-wrap:wrap;
+}
+
+.form-intro-container {
+	width:100%;
+	margin-bottom:50px;
+	padding-top:0;
+	padding-right:0;	
+}
+
+.contact-form-container .form-container {
+	width:100%;
+}
+
+span.form-design-line {
+	width:100%;
+	margin-top:50px;
+	border-bottom:1px solid #db03cc;
+}
+
+/*----- Contact Us -----*/
+
+
+
+
+
+
+/*----- My Listings -----*/
+
+.my-listings-container {
+	width:100%;
+}
+
+/*----- My Listings -----*/
+
+
+
+
+
+
+/*----- Confirmation Page -----*/
+
+.template-page-container.confirmation-page {
+	padding:95px 35px 275px 35px;
+}
+
+/*----- Confirmation Page -----*/
+
+
+
+
+
+
+/*----- Footer -----*/
+
+.footer-main {
+	padding:45px 35px 20px 35px;
+}
+
+.footer-copyright-container {
+	padding:40px 35px 40px 35px;
+}
+
+/*----- Footer -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:715px) {
+	
+/*----- Available Cars -----*/
+
+.available-cars-container .items-container .item {
+	width:48.33194328607173%;
+	margin-right:3.336113427856547%;
+}
+
+.available-cars-container .items-container .item:nth-of-type(2n) {
+	margin-right:0 !important;
+}
+
+.available-cars-container .items-container .item:nth-of-type(3n) {
+	margin-right:3.336113427856547%;
+}
+
+/*----- Available Cars -----*/
+	
+	
+	
+	
+	
+	
+/*----- Footer -----*/
+
+.footer-main ul {
+	flex-wrap:wrap;
+	height:auto;
+}
+
+.footer-main ul li {
+	width:100%;
+	height:auto;
+}
+
+/*----- Footer -----*/
+	
+}
+
+
+
+
+
+
+@media (max-width:675px) {
+
+/*----- My Listings -----*/
+
+.my-listing-title {
+	width:70%;
+}
+
+.my-listing-edit-delete {
+	width:30%;
+}
+
+/*----- My Listings -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:650px) {
+
+/*----- Home Page Intro -----*/
+
+.home-page-intro-container h1 {
+	font-size:20px;
+	margin:0 auto 20px auto;
+}
+
+/*----- Home Page Intro -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+	
+/*----- Home Page Intro -----*/
+	
+.search-container {
+	width:auto;
+}
+
+/*----- Home Page Intro -----*/
+	
+	
+	
+	
+	
+	
+/*----- Form Template -----*/
+
+.form-container .form-spacing {
+	flex-wrap:wrap;
+}
+
+.form-container .field-left {
+	width:100%;
+	margin-bottom:25px;
+}
+
+.form-container .field-right {
+	width:100%
+}
+
+/*----- Form Template -----*/
+
+
+
+
+
+
+/*----- Custom Admin Page -----*/
+
+.admin-area {
+	width:100%;
+}
+
+/*----- Custom Admin Page -----*/
+
+
+
+
+
+
+/*----- 404 -----*/
+
+.template-text-container.error-404 h1 {
+	font-size:200px;
+}
+
+.template-text-container.error-404 p {
+	font-size:30px;
+}
+
+/*----- 404 -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:568px) {
+	
+/*----- Brand Logos -----*/
+
+.brand-logos-container ul li {
+	width:50%;
+	height:145px;
+}
+
+/*----- Brand Logos -----*/
+
+
+
+
+
+
+/*----- Form Template -----*/
+
+.form-container form textarea {
+	height:150px;
+}
+
+/*----- Form Template -----*/
+
+
+
+
+
+
+/*----- Template -----*/
+
+.template-page-header-container h1 {
+	font-size:36px;
+}
+
+.template-text-container p {
+	font-size:18px;
+	line-height:1.6;
+}
+
+.template-article-container p {
+	font-size:18px;
+	line-height:1.6;
+}
+
+/*----- Template -----*/
+
+
+
+
+
+
+/*----- Listing Page -----*/
+
+.listing-header-container h1 {
+	font-size:24px;
+}
+
+.car-attribute {
+	width:100%;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+/*----- Search Page -----*/
+
+.search-page-header-container h1 {
+	font-size:26px;
+}
+
+.search-page-header-container p {
+	font-size:16px;
+}
+
+/*----- Search Page -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:550px) {
+	
+/*----- My Listings -----*/
+
+.my-listing-title {
+	width:65%;
+}
+
+.my-listing-edit-delete {
+	width:35%;
+}
+
+/*----- My Listings -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:525px) {
+
+/*----- Login -----*/
+
+.form-container.login {
+	width:auto;
+}
+
+/*----- Login -----*/
+
+
+
+
+
+
+/*----- Login Errors -----*/
+
+.krisokservicesltd-login-errors {
+	width:100%;
+}
+
+/*----- Login Errors -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:505px) {
+	
+/*----- My Listings -----*/
+
+.my-listings-container {
+	flex-wrap:wrap;
+	height:auto;
+	padding:5px 0 6.5px 0;
+}
+
+.my-listing-title {
+	display:block;
+	width:100%;
+	height:30px;
+	line-height:30px;
+	border-right:none;
+}
+
+.my-listing-edit-delete {
+	text-align:left;
+	width:auto;
+	height:30px;
+	padding-top:2.5px;
+	padding-left:7.5px;
+}
+
+.span-center {
+	margin:0 auto;
+}
+
+.my-listing-edit-delete span.edit a {
+	margin-right:3.5px;
+}
+
+/*----- My Listings -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:500px) {
+
+/*----- Privacy Policy -----*/
+
+.template-page-header-container.privacy-policy h1 {
+	font-size:28px;
+}
+
+/*----- Privacy Policy -----*/
+	
+}
+
+
+
+
+
+
+@media (max-width:450px) {
+
+/*----- Home Page Intro -----*/
+
+.search-container input {
+	padding-left:15px;
+}
+	
+/*----- Home Page Intro -----*/
+
+
+
+
+
+	
+/*----- Available Cars -----*/
+
+.available-cars-container .items-container .item {
+	width:100%;
+	margin-right:0;
+}
+
+.available-cars-container .items-container .item:nth-of-type(3n) {
+	margin-right:0;
+}
+
+.available-cars-container .items-container .item {
+	height:350px
+}
+
+.available-cars-container .items-container .item .item-text {
+	height:155px;
+}
+
+.available-cars-container .items-container .item .item-text p.price {
+	bottom:20px;
+}
+
+/*----- Available Cars -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:425px) {
+
+/*----- Listing Page -----*/
+
+.listing-slider-container .swiper-container {
+	height:285px;
+}
+
+/*----- Listing Page -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:365px) {
+
+/*----- Header & Navigation -----*/
+
+header nav {
+	padding:0 15px;
+}
+
+.menu-items .menu li a {
+	padding:20px 15px
+}
+
+.menu-items .menu li.header-social-media {
+	padding:25px 15px;
+}
+
+.logo {
+	width:150px;
+	padding-top:22px;
+}
+
+/*----- Header & Navigation -----*/
+
+
+
+
+
+
+/*----- Home Page Intro -----*/
+
+.home-page-intro-container {
+	padding:100px 15px;
+}
+
+/*----- Home Page Intro -----*/
+
+
+
+
+
+
+/*----- Home Page Listings -----*/
+
+.homepage-listings-container {
+	padding:65px 15px;
+}
+
+.items-container .item {
+	width:235px;
+	height:365px;
+	margin-right:30px;
+}
+
+.items-container .item .item-text {
+	height:165px;
+}
+
+/*----- Home Page Listings -----*/
+
+
+
+
+
+
+/*----- Listing Page -----*/
+
+.more-cars-container .items-container .item {
+	width:235px;
+	height:365px;
+	margin-right:30px;
+}
+
+.more-cars-container .items-container .item .item-text {
+	height:165px;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+
+/*----- Brand Logos -----*/
+
+.brand-logos-container {
+	padding:65px 15px;
+}
+
+.brand-logos-container ul li {
+	height:115px;
+}
+
+/*----- Brand Logos -----*/
+
+
+
+
+
+
+/*----- Template -----*/
+
+.template-page-header-container {
+	padding:75px 15px;
+}
+
+.template-page-container {
+	padding:95px 15px 125px 15px;
+}
+
+.template-article-container {
+	padding:25px 15px 35px 15px;
+}
+
+/*----- Template -----*/
+
+
+
+
+
+
+/*----- About Us -----*/
+
+.template-page-header-container.about-us {
+	padding:75px 15px;
+}
+
+.template-page-header-container.about-us h1 {
+	font-size:26px;
+}
+
+.template-page-container.about-us {
+	padding:50px 15px 115px 15px;
+}
+
+/*----- About Us -----*/
+
+
+
+
+
+
+/*----- Available Cars -----*/
+
+.template-page-header-container.custom h1 {
+	font-size:26px;
+}
+
+.available-cars-container {
+	padding:5px 15px 105px 15px;
+}
+	
+/*----- Available Cars -----*/
+
+
+
+
+
+
+/*----- Listing Page -----*/
+
+.listing-header-container {
+	padding:75px 15px 45px 15px;
+}
+
+.car-details-container {
+	padding:25px 15px 35px 15px;
+}
+
+.more-cars-container {
+	padding:45px 15px;
+}
+
+/*----- Listing Page -----*/
+
+
+
+
+
+
+/*----- Search Page -----*/
+
+.search-page-header-container {
+	padding:75px 15px 25px 15px;
+}
+
+.search-text-container {
+	padding:25px 15px 175px 15px;
+}
+
+.search-text-container p {
+	font-size:16px;
+}
+
+/*----- Search Page -----*/
+
+
+
+
+
+
+/*----- Confirmation Page -----*/
+
+.template-page-container.confirmation-page {
+	padding:95px 15px 250px 15px;
+}
+
+/*----- Confirmation Page -----*/
+
+
+
+
+
+
+/*----- 404 -----*/
+
+.template-page-container.error-404 {
+	padding-bottom:150px;
+}
+
+.template-text-container.error-404 h1 {
+	font-size:150px;
+}
+
+.template-text-container.error-404 p {
+	font-size:26px;
+}
+
+/*----- 404 -----*/
+
+
+
+
+
+
+/*----- Footer -----*/
+
+.footer-main {
+	padding:45px 15px 20px 15px;
+}
+
+.footer-copyright-container {
+	padding:40px 15px 40px 15px;
+}
+
+/*----- Footer -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:345px) {
+	
+/*----- Login -----*/
+
+.lower-login-details {
+	display:block;
+}
+
+.form-container.login .rememberme {
+	width:100%;
+	margin-bottom:20px;
+}
+
+.form-button.login {
+	margin-left:0;
+}
+
+.form-button.login .submit-form {
+	width:100%;
+}
+
+/*----- Login -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:320px) {
+
+/*----- Listing Page -----*/
+
+.listing-slider-container .swiper-container {
+	height:215px;
+}
+
+/*----- Listing Page -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:310px) {
+
+/*----- Home Page Listings -----*/
+
+.items-container .item {
+	width:200px;
+	height:385px;
+	margin-right:25px;
+}
+
+.items-container .item .item-text {
+	height:185px;
+}
+
+/*----- Home Page Listings -----*/
+
+
+
+
+
+
+/*----- Listing Page -----*/
+
+.more-cars-container .items-container .item {
+	width:200px;
+	height:385px;
+	margin-right:25px;
+}
+
+.more-cars-container .items-container .item .item-text {
+	height:185px;
+}
+
+/*----- Listing Page -----*/
+
+}
+
+
+
+
+
+
+@media (max-width:290px) {
+	
+/*----- Template -----*/
+
+.template-page-header-container h1 {
+	font-size:32px;
+}
+
+/*----- Template -----*/
+
+
+
+
+
+
+/*----- Available Cars -----*/
+
+.template-page-header-container.custom h1 {
+	font-size:24px;
+}
+
+/*----- Available Cars -----*/
+
+
+
+
+
+
+/*----- 404 -----*/
+
+.template-text-container.error-404 h1 {
+	font-size:135px;
+}
+
+/*----- 404 -----*/
+
+}
